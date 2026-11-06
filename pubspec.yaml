@@ -16,9 +16,11 @@ dependencies:
   ffi: ^2.2.0
   path: ^1.9.1
   win32: ^6.3.0
+  # Held on 0.3: cross_file 0.4 changes XFile (abstract, PlatformXFile) and upstream moves to it only in file_picker 14,
+  # blocked by flutter/flutter#193154 (tracking: this repo's upstream #2224). Move together with that major.
   cross_file: ^0.3.5+2
   web: ^1.1.1
-  dbus: ^0.7.12
+  dbus: ^0.8.0
 
 dev_dependencies:
   flutter_lints: ^6.0.0
